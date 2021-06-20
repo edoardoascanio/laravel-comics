@@ -4,7 +4,7 @@
             <ul>
                 <div class="spacing"></div>
                 <li><a href="">DC POWER <i class="fa fa-trademark" aria-hidden="true"></i> VISA <i class="fa fa-registered" aria-hidden="true"></i></a></li>
-                <li><a href="">ADDITIONAL DC SITIES <i class="fa fa-caret-down"></a></i></li>
+                <li><a href="">ADDITIONAL DC SITIES <i class="fa fa-caret-down"></i></a></li>
             </ul>
         </div>
     </div>
@@ -13,12 +13,9 @@
         <div class="center-block">
             <ul>
                 <li>
-                    <a href="{{ url('/')}}">
-
-                        <div class="logo">
-                            <img src="{{ asset('images/dc-logo.png') }}" alt="tag">
-                        </div>
-                    </a>
+                    <div class="logo">
+                        <a href="{{ url('/')}}"><img src="{{asset('images/dc-logo.png')}}" alt="dc-logo"></a>
+                    </div>
                 </li>
 
                 <li>
@@ -30,36 +27,44 @@
                 </li>
 
                 <li>
-                    <a href="">TV</a>
+                    <a href="{{ route('comics')}}">TV</a>
                 </li>
 
                 <li>
-                    <a href="">GAMES</a>
+                    <a href="{{ route('comics')}}">GAMES</a>
                 </li>
 
                 <li>
-                    <a href="">COLLECTIBLES</a>
+                    <a href="{{ route('comics')}}">COLLECTIBLES</a>
                 </li>
 
                 <li>
-                    <a href="">VIDEOS</a>
+                    <a href="{{ route('comics')}}">VIDEOS</a>
                 </li>
 
                 <li>
-                    <a href="">FANS</a>
+                    <a href="{{ route('comics')}}">FANS</a>
                 </li>
 
                 <li>
-                    <a href="">NEWS</a>
+                    <a href="{{ route('comics')}}">NEWS</a>
                 </li>
 
                 <li>
-                    <a href="">SHOP</a>
+                    <a id="shop" href="">SHOP <i class="fa fa-caret-down"></i></a>
+
+                    <div class="dropdown">
+                        <p>DC SHOP</p>
+                        <p>PRINT SUBSCRIPTIONS</p>
+                        <p>COMIC SHOP LOCATOR</p>
+                    </div>
                 </li>
 
                 <li>
-                    <input type="text" placeholder="Search">
-                    <i class="fa fa-search"></i>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class="fa fa-search"></i>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -67,7 +72,7 @@
 </header>
 
 <div class="hero">
-
+    <img src="{{asset('images/jumbotron.jpg')}}" alt="jumbotron-img">
 </div>
 
 
