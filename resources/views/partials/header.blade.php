@@ -15,8 +15,9 @@
                 <li>
                     <div class="logo">
                         <a href="{{ url('/')}}">
-
-                            <img src="{{asset('images/dc-logo.png')}}" alt="dc-logo">
+                            <div class="logo">
+                                <img src="{{asset('images/dc-logo.png')}}" alt="dc-logo">
+                            </div>
                         </a>
                     </div>
                 </li>
@@ -75,9 +76,8 @@
 </header>
 
 <div class="hero">
-    <img src="{{asset('images/jumbotron.jpg')}}" alt="jumbotron-img">
+    
 </div>
-
 
 </body>
 </html>

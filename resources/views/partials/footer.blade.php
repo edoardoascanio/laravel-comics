@@ -4,7 +4,9 @@
 
             <div class="col-1">
                 <ul>
-                    <li><h3>DC COMICS</h3></li>
+                    <li>
+                        <h3>DC COMICS</h3>
+                    </li>
 
                     <li><a href="">Characters</a></li>
 
@@ -23,7 +25,9 @@
 
                 <ul>
 
-                    <li><h3>SHOP</h3></li>
+                    <li>
+                        <h3>SHOP</h3>
+                    </li>
 
                     <li><a href="">Shop DC</a></li>
 
@@ -34,7 +38,9 @@
 
             <div class="col-2">
                 <ul>
-                    <li><h3>DC</h3></li>
+                    <li>
+                        <h3>DC</h3>
+                    </li>
 
                     <li><a href="">Term of Use</a></li>
 
@@ -63,7 +69,9 @@
 
             <div class="col-3">
                 <ul>
-                    <li><h3>SITES</h3></li>
+                    <li>
+                        <h3>SITES</h3>
+                    </li>
 
                     <li><a href="">DC</a></li>
 
@@ -83,11 +91,8 @@
             <div class="copyright">
                 <p>All Site Content TM and <i class="fa fa-copyright"></i> 2020 DC Entertainment, unless otherwise <a href=""><span>noted here</span></a>. All rights reserved. <br> <a href=""><span>Cookies Settings</span></p></a>
             </div>
-
-            <div class="dc-footer">
-                <img src="{{asset('images/dc-logo-bg.png')}}" alt="dc-logo">
-            </div>
         </div>
+
     </section>
 
     <section class="bottom">
