@@ -10,73 +10,77 @@
     </div>
 
     <nav>
-        <div class="center-block">
-            <ul>
-                <li>
-                    <div class="logo">
-                        <a href="{{ url('/')}}">
-                            <div class="logo">
-                                <img src="{{asset('images/dc-logo.png')}}" alt="dc-logo">
-                            </div>
-                        </a>
-                    </div>
-                </li>
 
-                <li>
-                    <a href="">CHARACTERS</a>
-                </li>
+        <ul>
+            <li>
+                <div class="logo">
+                    <a href="{{ url('/')}}">
+                        <div class="logo">
+                            <img src="{{asset('images/dc-logo.png')}}" alt="dc-logo">
+                        </div>
+                    </a>
+                </div>
+            </li>
 
-                <li>
-                    <a href="{{ route('comics')}}">COMICS</a>
-                </li>
+            <li>
+                <a href="{{ route('characters')}}">CHARACTERS</a>
+            </li>
 
-                <li>
-                    <a href="{{ route('comics')}}">TV</a>
-                </li>
+            <li>
+                <a href="{{ route('comics')}}">COMICS</a>
+            </li>
 
-                <li>
-                    <a href="{{ route('comics')}}">GAMES</a>
-                </li>
+            <li>
+                <a href="{{ route('movies')}}">MOVIES</a>
+            </li>
 
-                <li>
-                    <a href="{{ route('comics')}}">COLLECTIBLES</a>
-                </li>
+            <li>
+                <a href="{{ route('tv')}}">TV</a>
+            </li>
 
-                <li>
-                    <a href="{{ route('comics')}}">VIDEOS</a>
-                </li>
+            <li>
+                <a href="{{ route('games')}}">GAMES</a>
+            </li>
 
-                <li>
-                    <a href="{{ route('comics')}}">FANS</a>
-                </li>
+            <li>
+                <a href="{{ route('collectibles')}}">COLLECTIBLES</a>
+            </li>
 
-                <li>
-                    <a href="{{ route('comics')}}">NEWS</a>
-                </li>
+            <li>
+                <a href="{{ route('videos')}}">VIDEOS</a>
+            </li>
 
-                <li>
-                    <a id="shop" href="">SHOP <i class="fa fa-caret-down"></i></a>
+            <li>
+                <a href="{{ route('fans')}}">FANS</a>
+            </li>
 
-                    <div class="dropdown">
-                        <p>DC SHOP</p>
-                        <p>PRINT SUBSCRIPTIONS</p>
-                        <p>COMIC SHOP LOCATOR</p>
-                    </div>
-                </li>
+            <li>
+                <a href="{{ route('news')}}">NEWS</a>
+            </li>
 
-                <li>
-                    <div class="search">
-                        <input type="text" placeholder="Search">
-                        <i class="fa fa-search"></i>
-                    </div>
-                </li>
-            </ul>
-        </div>
+            <li>
+                <a id="shop" href="">SHOP <i class="fa fa-caret-down"></i></a>
+
+                <div class="dropdown">
+                    <p>DC SHOP</p>
+                    <p>PRINT SUBSCRIPTIONS</p>
+                    <p>COMIC SHOP LOCATOR</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <i class="fa fa-search"></i>
+                </div>
+            </li>
+        </ul>
+
     </nav>
 </header>
 
 <div class="hero">
-    
+
 </div>
 
 </body>

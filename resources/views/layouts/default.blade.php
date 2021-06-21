@@ -14,10 +14,13 @@
     @include('partials.header')
 
 
-    <section>
+    <div class="welcome">
         <div class="center-block">
-            <h1>HOMEPAGE</h1>
+            <h1>WELCOME TO DC</h1>
         </div>
+    </div>
+    <section class="homepage">
+
     </section>
 
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comics</title>
+    <title>Characters</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
@@ -15,27 +15,11 @@
 <body>
     @include('partials.header')
 
-    <section class="comics-container">
-        <div class="center-block">
 
-            <div class="series">
-                <h3>CURRENT SERIES</h3>
-            </div>
-            <div class="comics-list">
-                @foreach($comicsList as $comics)
+    <section class="characters-container">
 
-                <div class="card">
-                    <img src="{{ $comics['thumb'] }}" alt="">
-                    <h5>{{ $comics['title']}}</h5>
-                </div>
+        <img src="{{asset('images/characters.jpg')}}" alt="digital-comics">
 
-                @endforeach
-            </div>
-
-            <div class="load">
-                <button>LOAD MORE</button>
-            </div>
-        </div>
     </section>
 
     <section class="main-icons">
