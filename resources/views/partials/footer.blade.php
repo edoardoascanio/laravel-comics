@@ -4,7 +4,7 @@
 
             <div class="col-1">
                 <ul>
-                    <li><strong>DC COMICS</strong></li>
+                    <li><h3>DC COMICS</h3></li>
 
                     <li><a href="">Characters</a></li>
 
@@ -23,7 +23,7 @@
 
                 <ul>
 
-                    <li><strong>SHOP</strong></li>
+                    <li><h3>SHOP</h3></li>
 
                     <li><a href="">Shop DC</a></li>
 
@@ -34,7 +34,7 @@
 
             <div class="col-2">
                 <ul>
-                    <li><strong>DC</strong></li>
+                    <li><h3>DC</h3></li>
 
                     <li><a href="">Term of Use</a></li>
 
@@ -63,7 +63,7 @@
 
             <div class="col-3">
                 <ul>
-                    <li><strong>SITES</strong></li>
+                    <li><h3>SITES</h3></li>
 
                     <li><a href="">DC</a></li>
 
@@ -91,14 +91,16 @@
     </section>
 
     <section class="bottom">
-        <button>SIGN-UP NOW</button>
-        <h3>FOLLOW US</h3>
-        <div class="icons">
-            <img src="{{asset('images/footer-facebook.png')}}" alt="fb-logo">
-            <img src="{{asset('images/footer-twitter.png')}}" alt="tw-logo">
-            <img src="{{asset('images/footer-youtube.png')}}" alt="yt-logo">
-            <img src="{{asset('images/footer-pinterest.png')}}" alt="pn-logo">
-            <img src="{{asset('images/footer-periscope.png')}}" alt="pe-logo">
+        <div class="center-block">
+            <button>SIGN-UP NOW</button>
+            <div class="footer-icons">
+                <h3>FOLLOW US</h3>
+                <img src="{{asset('images/footer-facebook.png')}}" alt="fb-logo">
+                <img src="{{asset('images/footer-twitter.png')}}" alt="tw-logo">
+                <img src="{{asset('images/footer-youtube.png')}}" alt="yt-logo">
+                <img src="{{asset('images/footer-pinterest.png')}}" alt="pn-logo">
+                <img src="{{asset('images/footer-periscope.png')}}" alt="pe-logo">
+            </div>
         </div>
     </section>
 

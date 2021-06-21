@@ -18,6 +18,21 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $datiComics = config("comics");
+
+    $datiView = [
+        "comicsList" => $datiComics
+    ];
+
+    return view('comics', $datiView);
 })->name('comics');
+
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
+
+Route::get('/movies', function () {
+    return view('movies');
+})->name('movies');
+
 

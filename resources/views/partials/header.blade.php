@@ -14,7 +14,10 @@
             <ul>
                 <li>
                     <div class="logo">
-                        <a href="{{ url('/')}}"><img src="{{asset('images/dc-logo.png')}}" alt="dc-logo"></a>
+                        <a href="{{ url('/')}}">
+
+                            <img src="{{asset('images/dc-logo.png')}}" alt="dc-logo">
+                        </a>
                     </div>
                 </li>
 

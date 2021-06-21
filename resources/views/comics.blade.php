@@ -14,5 +14,54 @@
 </head>
 <body>
     @include('partials.header')
+
+    {{-- @dump($comicsList) --}}
+
+    <section class="comics-container">
+        <div class="center-block">
+
+            <div class="series">
+                <h3>CURRENT SERIES</h3>
+            </div>
+            <div class="comics-list">
+                @foreach($comicsList as $comics)
+
+                <div class="card">
+                    <img src="{{ $comics['thumb'] }}" alt="">
+                    <h5>{{ $comics['title']}}</h5>
+                </div>
+
+                @endforeach
+            </div>
+
+            <div class="load">
+                <button>LOAD MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-icons">
+
+        <div class="center-block">
+
+            <img src="{{asset('images/buy-comics-digital-comics.png')}}" alt="digital-comics">
+            <h5>DIGITAL COMICS</h5>
+
+            <img src="{{asset('images/buy-comics-merchandise.png')}}" alt="merchandise">
+            <h5>DC MERCHANDISE</h5>
+
+            <img src="{{asset('images/buy-comics-shop-locator.png')}}" alt="shop-locator">
+            <h5>SUBSCRIPTIONS</h5>
+
+            <img src="{{asset('images/buy-comics-subscriptions.png')}}" alt="subscriptions">
+            <h5>COMIC SHOP LOCATOR</h5>
+
+            <img src="{{asset('images/buy-dc-power-visa.svg')}}" alt="power-visa">
+            <h5>DC POWER VISA</h5>
+
+        </div>
+
+    </section>
+    @include('partials.footer')
 </body>
 </html>
