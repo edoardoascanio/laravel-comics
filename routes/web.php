@@ -27,6 +27,20 @@ Route::get('/comics', function () {
     return view('comics', $datiView);
 })->name('comics');
 
+Route::get('/singleComic/{id}', function ($id) {
+    $datiComics = config("comics");
+ 
+    if(!is_numeric($id) || $id < 0 || $id > count($datiComics) - 1){
+        abort(404);
+    }
+
+    $comicSelected = $datiComics[$id];
+
+    return view('singleComic', [
+        "chosenComic" => $comicSelected
+    ]);
+})->name('singleComic');
+
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');

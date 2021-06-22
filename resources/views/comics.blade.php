@@ -1,65 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comics</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+@extends('layouts.default')
 
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+@section('title', 'comics')
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
-    @include('partials.header')
+@section('header_scripts')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <section class="comics-container">
-        <div class="center-block">
+<link rel="stylesheet" href="{{asset('css/app.css')}}">
 
-            <div class="series">
-                <h3>CURRENT SERIES</h3>
-            </div>
-            <div class="comics-list">
-                @foreach($comicsList as $comics)
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+@endsection
 
-                <div class="card">
-                    <img src="{{ $comics['thumb'] }}" alt="">
-                    <h5>{{ $comics['title']}}</h5>
-                </div>
+@section('content')
+<section class="comics-container">
+    <div class="center-block">
 
-                @endforeach
-            </div>
-
-            <div class="load">
-                <button>LOAD MORE</button>
-            </div>
+        <div class="series">
+            <h3>CURRENT SERIES</h3>
         </div>
-    </section>
+        <div class="comics-list">
+            @foreach($comicsList as $comics)
 
-    <section class="main-icons">
+            <div class="card">
+                <img src="{{ $comics['thumb'] }}" alt="">
+                <h5>{{ $comics['title']}}</h5>
+                {{-- <a href="{{route('singleComic')}}"></a> --}}
+            </div>
 
-        <div class="center-block">
-
-            <img src="{{asset('images/buy-comics-digital-comics.png')}}" alt="digital-comics">
-            <h5>DIGITAL COMICS</h5>
-
-            <img src="{{asset('images/buy-comics-merchandise.png')}}" alt="merchandise">
-            <h5>DC MERCHANDISE</h5>
-
-            <img src="{{asset('images/buy-comics-subscriptions.png')}}" alt="shop-locator">
-            <h5>SUBSCRIPTIONS</h5>
-
-            <img src="{{asset('images/buy-comics-shop-locator.png')}}" alt="subscriptions">
-            <h5>COMIC SHOP LOCATOR</h5>
-
-            <img src="{{asset('images/buy-dc-power-visa.svg')}}" alt="power-visa">
-            <h5>DC POWER VISA</h5>
-
+            @endforeach
         </div>
 
-    </section>
-    @include('partials.footer')
-</body>
-</html>
+        <div class="load">
+            <button>LOAD MORE</button>
+        </div>
+    </div>
+</section>
+@endsection
