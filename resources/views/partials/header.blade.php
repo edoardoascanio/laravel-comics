@@ -1,5 +1,7 @@
 @php
 
+
+
 function setLinkClass(...$pageNames){
     $routeName = Request::route()->getName();
     $contains = array_search($routeName, $pageNames);
@@ -25,7 +27,7 @@ function setLinkClass(...$pageNames){
         <ul>
             <li>
                 <div class="logo">
-                    <a class="{{ Request::route()->getName() == '/' ? 'active' : ''}}" href="{{ url('/')}}">
+                    <a class="nav-link {{ Request::route()->getName() == 'home' ? 'active' : ''}}"  href="{{ url('/')}}">
                         <div class="logo">
                             <img src="{{asset('images/dc-logo.png')}}" alt="dc-logo">
                         </div>
@@ -34,43 +36,43 @@ function setLinkClass(...$pageNames){
             </li>
 
             <li>
-                <a class="{{ Request::route()->getName() == 'characters' ? 'active' : ''}}" href="{{ route('characters')}}">CHARACTERS</a>
+                <a class="nav-link {{ Request::route()->getName() == 'characters' ? 'active' : ''}}" href="{{ route('characters')}}">CHARACTERS</a>
             </li>
 
             <li>
-                <a class="{{ Request::route()->getName() == 'comics' ? 'active' : ''}}" href="{{ route('comics')}}">COMICS</a>
+                <a class="nav-link {{setLinkClass ('comics', 'singleComic')}}" href="{{ route('comics')}}">COMICS</a>
             </li>
 
             <li>
-                <a class="{{ Request::route()->getName() == 'movies' ? 'active' : ''}}" href="{{ route('movies')}}">MOVIES</a>
+                <a class="nav-link {{ Request::route()->getName() == 'movies' ? 'active' : ''}}" href="{{ route('movies')}}">MOVIES</a>
             </li>
 
             <li>
-                <a class="{{ Request::route()->getName() == 'tv' ? 'active' : ''}}" href="{{ route('tv')}}">TV</a>
+                <a class="nav-link {{ Request::route()->getName() == 'tv' ? 'active' : ''}}" href="{{ route('tv')}}">TV</a>
             </li>
 
             <li>
-                <a class="{{ Request::route()->getName() == 'games' ? 'active' : ''}}" href="{{ route('games')}}">GAMES</a>
+                <a class="nav-link {{ Request::route()->getName() == 'games' ? 'active' : ''}}" href="{{ route('games')}}">GAMES</a>
             </li>
 
             <li>
-                <a class="{{ Request::route()->getName() == 'collectibles' ? 'active' : ''}}" href="{{ route('collectibles')}}">COLLECTIBLES</a>
+                <a class="nav-link {{ Request::route()->getName() == 'collectibles' ? 'active' : ''}}" href="{{ route('collectibles')}}">COLLECTIBLES</a>
             </li>
 
             <li>
-                <a class="{{ Request::route()->getName() == 'videos' ? 'active' : ''}}" href="{{ route('videos')}}">VIDEOS</a>
+                <a class="nav-link {{ Request::route()->getName() == 'videos' ? 'active' : ''}}" href="{{ route('videos')}}">VIDEOS</a>
             </li>
 
             <li>
-                <a class="{{ Request::route()->getName() == 'fans' ? 'active' : ''}}" href="{{ route('fans')}}">FANS</a>
+                <a class="nav-link {{ Request::route()->getName() == 'fans' ? 'active' : ''}}" href="{{ route('fans')}}">FANS</a>
             </li>
 
             <li>
-                <a class="{{ Request::route()->getName() == 'news' ? 'active' : ''}}" href="{{ route('news')}}">NEWS</a>
+                <a class="nav-link {{ Request::route()->getName() == 'news' ? 'active' : ''}}" href="{{ route('news')}}">NEWS</a>
             </li>
 
             <li>
-                <a id="shop" href="">SHOP <i class="fa fa-caret-down"></i></a>
+                <a class="nav-link" id="shop" href="">SHOP <i class="fa fa-caret-down"></i></a>
 
                 <div class="dropdown">
                     <p>DC SHOP</p>

@@ -57,14 +57,14 @@ nav li {
     margin-right: 25px;
 }
 
-nav li a {
+.nav-link {
     color: #484848;
     font-weight: 600;
     font-size: 14px;
     padding-bottom: 45px;
 }
 
-nav li a:hover {
+.nav-link:hover {
     color: #0282f9;
     border-bottom: 5px solid #0282f9;
     transition: 0.3s;
