@@ -411,6 +411,7 @@ footer .bottom {
 
 .view:hover, .book:hover{
     background-color: #0282f9;
+    transition: 0.2s;
 }
 
 .specifics,.green-banner,.cost {
@@ -444,6 +445,7 @@ footer .bottom {
 
 .check button:hover {
     background-color: #49944b;
+    transition: 0.2s;
 }
 
 .description {
