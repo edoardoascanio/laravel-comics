@@ -12,12 +12,20 @@
 @endsection
 
 @section('content')
-    <section class="container">
+<section class="container">
 
-        <div class="center-block">
-            <img src="{{asset('images/videos.jpg')}}" alt="videos-list">
+    <div class="center-block">
+
+        <div class="video-slider">
+            <img class="videos" src="{{asset('images/videos.jpg')}}" alt="videos-list">
+
+            <div class="spinner">
+                <div class="loading-container">
+                    <div class="loading"></div>
+                </div>
+            </div>
         </div>
+    </div>
 
-    </section>
+</section>
 @endsection
-

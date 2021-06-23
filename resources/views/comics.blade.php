@@ -19,12 +19,12 @@
             <h3>CURRENT SERIES</h3>
         </div>
         <div class="comics-list">
-            @foreach($comicsList as $comics)
+            @foreach($comicsList as $index => $comics)
 
             <div class="card">
                 <img src="{{ $comics['thumb'] }}" alt="">
-                <h5>{{ $comics['title']}}</h5>
-                {{-- <a href="{{route('singleComic')}}"></a> --}}
+                
+                <a href="{{route('singleComic',["id" => $index])}}"><h5>{{ $comics['title']}}</h5></a> 
             </div>
 
             @endforeach
