@@ -24,7 +24,7 @@
             <div class="card">
                 <img src="{{ $comics['thumb'] }}" alt="">
                 
-                <a href="{{route('singleComic',["id" => $index])}}"><h5>{{ $comics['title']}}</h5></a> 
+                <a href="{{route('singleComic',["id" => $index])}}"><h5>{{ $comics['series']}}</h5></a> 
             </div>
 
             @endforeach
